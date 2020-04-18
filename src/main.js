@@ -55,7 +55,7 @@ const onClickSubmit = () => {
 
 const displayWeatherData = data => {
   switchView();
-  fadeInOut()
+  fadeInOut();
 
   const weather = data.consolidated_weather[0];
 
@@ -67,9 +67,9 @@ const displayWeatherData = data => {
   const maxTemp = weather.max_temp.toFixed(2);
   const minTemp = weather.min_temp.toFixed(2);
 
-  viewElems.weatherCurrentTemp.innerText = `Current temperature: ${currTemp}°C`
-  viewElems.weatherMaxTemp.innerText = `Max temperature: ${maxTemp}°C`
-  viewElems.weatherMinTemp.innerText = `Min temperature: ${minTemp}°C`
+  viewElems.weatherCurrentTemp.innerText = `Current temperature: ${currTemp}°C`;
+  viewElems.weatherMaxTemp.innerText = `Max temperature: ${maxTemp}°C`;
+  viewElems.weatherMinTemp.innerText = `Min temperature: ${minTemp}°C`;
 }
 
 const fadeInOut = () => {
@@ -91,12 +91,12 @@ const switchView = () => {
 }
 
 const returnToSearch = () => {
-  fadeInOut()
+  fadeInOut();
 
   setTimeout(() => {
     switchView();
-    fadeInOut()
+    fadeInOut();
   }, 500);
 }
 
-document.addEventListener('DOMContentLoaded', initializeApp)
+document.addEventListener('DOMContentLoaded', initializeApp);
